@@ -1,0 +1,80 @@
+
+.about {
+    color: #514438;
+}
+
+.aboutBanner {
+    background-color: #e9dfd2;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.aboutBanner h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    color: #795c43;
+    margin-bottom: 10px;
+}
+
+.aboutBanner p {
+    color: #796957;
+}
+
+/* Conteúdo */
+.aboutContent {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 8%;
+}
+
+.aboutImage {
+    flex: 1;
+}
+
+.aboutImage img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.aboutText {
+    flex: 1;
+}
+
+.aboutText h2 {
+    color: #795c43;
+    font-family: Georgia, serif;
+    margin-bottom: 15px;
+}
+
+.aboutText p {
+    color: #74695f;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Valores */
+.aboutValues {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px 8%;
+    background-color: #f8f5f0;
+}
+
+.aboutValues div {
+    text-align: center;
+    padding: 20px;
+}
+
+.aboutValues h3 {
+    color: #795c43;
+}
+
+.aboutValues p {
+    color: #74695f;
+    line-height: 1.6;
+}
+

@@ -1,0 +1,118 @@
+
+.contact {
+    color: #514438;
+}
+
+/* Banner */
+.contactBanner {
+    background-color: #e9dfd2;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.contactBanner h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    color: #795c43;
+    margin-bottom: 10px;
+}
+
+.contactBanner p {
+    color: #796957;
+}
+
+/* Conteúdo */
+.contactContent {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    padding: 60px 8%;
+}
+
+/* Informações */
+.contactInfo h2,
+.contactForm h2 {
+    color: #795c43;
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+}
+
+.contactInfo > p {
+    color: #74695f;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.infoItem {
+    margin-bottom: 22px;
+}
+
+.infoItem h3 {
+    color: #795c43;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.infoItem p {
+    color: #74695f;
+}
+
+/* Formulário */
+.contactForm {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contactForm label {
+    color: #514438;
+    font-weight: 600;
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 12px;
+    border: 1px solid #ddd1c3;
+    border-radius: 7px;
+    outline: none;
+    font-family: inherit;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    border-color: #a47752;
+}
+
+.contactForm textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.contactForm button {
+    background-color: #795c43;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contactForm button:hover {
+    background-color: #5e4532;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contactContent {
+        grid-template-columns: 1fr;
+        padding: 35px 6%;
+    }
+}

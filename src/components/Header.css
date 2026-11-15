@@ -1,0 +1,99 @@
+
+/* Header principal */
+.header {
+    width: 100%;
+    min-height: 85px;
+    background-color: #f8f5f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Logo e nome da loja */
+.headerLogo {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerLogo h2 {
+    font-size: 24px;
+    color: #795c43;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+.headerLogo span {
+    font-size: 12px;
+    color: #9b8875;
+    margin-top: 4px;
+}
+
+/* Navegação */
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Links */
+.navigation a {
+    text-decoration: none;
+    color: #5c5147;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover */
+.navigation a:hover {
+    color: #a47752;
+}
+
+/* Link ativo */
+.navigation a.active {
+    color: #a47752;
+    font-weight: 600;
+}
+
+/* Linha abaixo dos links */
+.navigation a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #a47752;
+    bottom: -7px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.navigation a:hover::after,
+.navigation a.active::after {
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .headerLogo {
+        align-items: center;
+    }
+
+    .navigation {
+        gap: 22px;
+    }
+
+    .navigation a {
+        font-size: 14px;
+    }
+}

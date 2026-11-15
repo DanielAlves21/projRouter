@@ -1,0 +1,39 @@
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.notFound h1 {
+    font-size: 100px;
+    color: #8b6b4a;
+    margin: 0;
+}
+
+.notFound h2 {
+    color: #333;
+    font-size: 28px;
+}
+
+.notFound p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.notFound a {
+    text-decoration: none;
+    background-color: #8b6b4a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.notFound a:hover {
+    background-color: #705338;
+}
